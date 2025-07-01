@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assests/logo.png">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <ul class="sidebar-one">
+                <li class="home"><i class="fa-solid fa-house"></i><a href="#">Home</a></li>
+                <li class="search"><i class="fa-solid fa-magnifying-glass"></i><a href="#">Search</a></li>
+            </ul>
+            <div class="sidebar-two">
+                <div class="library">
+                    <ul>
+                        <li>
+                            <div><img src="./assests/library_icon.png"><a>Your Library</a></div>
+                            <span class="icons">
+                                <i class="fa-solid fa-plus"></i>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info-one">
+                    <h4>Create your first playlist</h4>
+                    <p>It's easy, we'll help you</p>
+                    <button class="badge">Create playlist</button>
+                </div>
+                <div class="info-one">
+                    <h4>Let's find some podcasts to follow</h4>
+                    <p>We'll keep you updated on new episodes</p>
+                    <button class="badge">Browse Podcasts</button>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="images">
+                    <img src="./assests/backward_icon.png">
+                    <img src="./assests/forward_icon.png" class="forward">
+                </div>
+                <div class="options">
+                    <button class="badge premium">Explore premium</button>
+                    <button class="badge install"><i class="fa-regular fa-circle-down"></i>Install App</button>
+                    <i class="fa-regular fa-user user"></i>
+                </div>
+            </div>
+
+            <div class="cards">
+                <h1>Recently Played</h1>
+                <div class="division-one division">
+                    <div class="card card-one">
+                        <img src="./assests/card1img.jpeg">
+                        <h4>Top 50 - Global</h4>
+                        <p>Your daily update of the most played...</p>
+                    </div>
+                </div>
+                <h1>Trending near you</h1>
+                <div class="division-two division">
+                    <div class="card card-one">
+                        <img src="./assests/card2img.jpeg">
+                        <h4>Top 50 - Global</h4>
+                        <p>Your daily update of the most played...</p>
+                    </div>
+                    <div class="card card-one">
+                        <img src="./assests/card3img.jpeg">
+                        <h4>Top 50 - Global</h4>
+                        <p>Your daily update of the most played...</p>
+                    </div>
+                    <div class="card card-one">
+                        <img src="./assests/card4img.jpeg">
+                        <h4>Top 50 - Global</h4>
+                        <p>Your daily update of the most played...</p>
+                    </div>
+                </div>
+                <h1>Featured Charts</h1>
+                <div class="division-two division">
+                    <div class="card card-one">
+                        <img src="./assests/card5img.jpeg">
+                        <h4>Top 50 - Global</h4>
+                        <p>Your daily update of the most played...</p>
+                    </div>
+                    <div class="card card-one">
+                        <img src="./assests/card6img.jpeg">
+                        <h4>Top 50 - Global</h4>
+                        <p>Your daily update of the most played...</p>
+                    </div>
+                    <div class="card card-one">
+                        <img src="./assests/card5img.jpeg">
+                        <h4>Top 50 - Global</h4>
+                        <p>Your daily update of the most played...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space">
+                <div></div>
+            </div>
+
+        </div>
+        <div class="music-player">
+            <div class="music-one">
+                <img src="./assests/card2img.jpeg">
+                <div class="song-info">
+                <span class="day">DayLight</span>
+                <span class="singer">David Kushnor</span>
+                </div>
+                <div class="icon-info">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-circle-plus"></i>
+                </div>
+            </div>
+            <div class="music-two">
+                <div class="one">
+                <img src="./assests/player_icon1.png">
+                <img src="./assests/player_icon2.png">
+                <img id="player" src="./assests/player_icon3.png">
+                <img src="./assests/player_icon4.png">
+                <img src="./assests/player_icon5.png">
+                </div>
+                    <p><span>0:00</span><input type="range" min="0" max="100" value="0"><span>3:33</span></p>
+            </div>
+            <div class="music-three">
+                <i class="fa-solid fa-circle-play"></i>
+                <i class="fa-solid fa-music"></i>
+                <i class="fa-solid fa-layer-group"></i>
+                <i class="fa-solid fa-headphones"></i>
+                <i class="fa-solid fa-volume-low"></i>
+                <input type="text" class="vol">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
